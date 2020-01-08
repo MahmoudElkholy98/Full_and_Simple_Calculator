@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!--- Required meta tags  ----->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!---bootstrap CSS--------->
+  <link rel="stylesheet" href="bootstrap-4.4.1-dist\css\bootstrap-grid.min.css">
+  <link rel="stylesheet" href="bootstrap-4.4.1-dist\css\bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-">
+        <div class="card">
+          <div class="card-block">
+            <div class="calc">
+              <form name="form">
+                <input type="text" name="text" class="textView" placeholder="0"> <br>
+              </form>
+              <table>
+                <tr>
+                  <td><input class="calcButton" type="button" value="c" onclick="clearAll()"></td>
+                  <td><input class="calcButton" type="button" value="<" onclick="clearOne()"></td>
+                  <td><input class="calcButton" type="button" value="/" onclick="insert('/')"></td>
+                  <td><input class="calcButton" type="button" value="*" onclick="insert('*')"></td>
+                </tr>
+                <tr>
+                  <td><input class="calcButton" type="button" value="7" onclick="insert(7)"></td>
+                  <td><input class="calcButton" type="button" value="8" onclick="insert(8)"></td>
+                  <td><input class="calcButton" type="button" value="9" onclick="insert(9)"></td>
+                  <td><input class="calcButton" type="button" value="-" onclick="insert('-')"></td>
+                </tr>
+                <tr>
+                  <td><input class="calcButton" type="button" value="4" onclick="insert(4)"></td>
+                  <td><input class="calcButton" type="button" value="5" onclick="insert(5)"></td>
+                  <td><input class="calcButton" type="button" value="6" onclick="insert(6)"></td>
+                  <td><input class="calcButton" type="button" value="+" onclick="insert('+')"></td>
+                </tr>
+
+                <tr>
+                  <td><input class="calcButton" type="button" value="1" onclick="insert(1)"></td>
+                  <td><input class="calcButton" type="button" value="2" onclick="insert(2)"></td>
+                  <td><input class="calcButton" type="button" value="3" onclick="insert(3)"></td>
+                  <td rowspan="2"><input class="calcButton eqlButton" type="button" value="=" onclick="equal()"></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2"><input class="calcButton zeroButton" type="button" value="0" onclick="insert(0)"></td>
+                  <td><input class="calcButton" type="button" value="." onclick="insert('.')"></td>
+                </tr>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+
+  </div>
+
+
+  <script type="text/javascript" src="javascript/learningJS.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="bootstrap-4.4.1-dist\js\bootstrap.min.js"></script>
+</body>
+
+</html>
